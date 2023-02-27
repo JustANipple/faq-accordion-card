@@ -61,9 +61,11 @@ body {
 .container {
   background-color: white;
   margin-inline: 1.5rem;
-  margin-block: 10rem;
+  margin-block: 7rem 0;
   padding-inline: 1.5rem;
+  padding-block: 0 2.5rem;
   border-radius: 1.5rem;
+  box-shadow: 0px 20px 30px -25px black;
 }
 
 /* ====== Image ====== */
@@ -90,23 +92,66 @@ body {
   text-align: center;
   font-size: 2rem;
   color: var(--bold-par-clr);
-  margin-block: 1.5rem;
+  margin-block: 1.25rem 1rem;
 }
 
-.box-one,
-.box-two,
-.box-three,
-.box-four,
-.box-five {
+/* ====== Invite question ====== */
+
+/* Box */
+.invite-box,
+.size-box,
+.password-box,
+.sub-box,
+.support-box {
+  display: grid;
+  grid-template-areas: 
+  "question arrow"
+  "answer none";
+  align-items: center;
   border-bottom: 1px solid var(--faq-border-clr);
+  padding-block: 0.5rem;
+  row-gap: 0.5rem;
+  margin-block-end: 0.5rem;
+}
+
+/* Question */
+.invite-question,
+.size-question,
+.password-question,
+.sub-question,
+.support-question {
   font-size: 0.825rem;
 }
 
-.question-arrow-one,
-.question-arrow-two,
-.question-arrow-three,
-.question-arrow-four,
-.question-arrow-five {
-  display: flex;
-  justify-content: space-between;
+.size-question {
+  font-weight: var(--fw-bold);
+}
+
+/* Arrow */
+.invite-arrow,
+.size-arrow,
+.password-arrow,
+.sub-arrow,
+.support-arrow {
+  margin-left: auto;
+}
+
+.size-arrow {
+  transform: rotate(180deg);
+}
+
+/* Answer */
+.invite-answer,
+.password-answer,
+.size-answer,
+.sub-answer,
+.support-answer {
+  padding-bottom: 0.75rem;
+  color: var(--light-par-clr);
+  display: none;
+}
+
+.size-answer {
+  display: block;
+  padding-bottom: 0.75rem;
 }
