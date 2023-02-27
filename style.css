@@ -1,0 +1,78 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* ====== Custom properties ====== */
+:root {
+    /* Main clr */
+    --bold-par-clr: hsl(238, 29%, 16%);
+    --arrow-clr: hsl(14, 88%, 65%);
+    --reg-par-clr: hsl(237, 12%, 33%);
+    --light-par-clr: hsl(240, 6%, 50%);
+    --main-bg-clr: hsl(240, 5%, 91%);
+    /* Gradient clr */
+    --top-clr: hsl(273, 75%, 66%);
+    --bot-clr: hsl(240, 73%, 65%);
+    /* Font */
+    --fs: 0.75rem;
+    --ff: 'Kumbh Sans', sans-serif;
+    --fw-reg: 400;
+    --fw-bold: 700; 
+}
+
+/* ====== Styles ====== */
+body {
+    font-family: var(--ff);
+    font-size: var(--fs);
+    background: linear-gradient(
+    180deg,
+    var(--top-clr), 
+    var(--bot-clr));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+  background-color: var(--main-bg-clr);
+  margin: 1.5rem;
+  padding: 1.5rem;
+  padding-top: 6rem;
+  border-radius: 1.5rem;
+  position: relative;
+}
+
+.illustration {
+  padding-inline: 1.5rem;
+  position: absolute;
+  top: -6.75rem;
+}
+
+.floor-pattern {
+  position: relative;
+  bottom: 4.5rem;
+}
