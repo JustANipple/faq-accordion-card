@@ -162,4 +162,16 @@ body {
   .container {
     display: flex;
   }
+
+  .illustration {
+    position: unset;
+  }
+
+  .woman-illustration {
+
+  }
+
+  .floor-pattern {
+    position: unset;
+  }
 }
