@@ -69,6 +69,10 @@ body {
 }
 
 /* ====== Image ====== */
+.at-box {
+  display: none;
+}
+
 .illustration {
   transform: translate(0, -7rem);
   max-width: 15rem;
@@ -77,9 +81,10 @@ body {
   position: relative;
 }
 
-.floor-pattern {
+.illustration picture:nth-child(2) {
   position: absolute;
   bottom: -2rem;
+  z-index: -1;
 }
 
 /* ====== FAQ ====== */
@@ -96,7 +101,6 @@ body {
 }
 
 /* ====== Invite question ====== */
-
 /* Box */
 .invite-box,
 .size-box,
@@ -158,20 +162,56 @@ body {
 }
 
 /* ====== Desktop view ====== */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
+  /* ====== Main ====== */
   .container {
     display: flex;
+    position: relative;
+    max-width: 57.5rem;
+    padding: unset;
+    margin: unset;
   }
 
+  /* ====== Image ====== */
+  .at-box {
+    display: block;
+    position: absolute;
+    transform: translate(-6rem, 11rem);
+    z-index: 3;
+  }
+  
   .illustration {
-    position: unset;
+    transform: unset;
+    max-width: unset;
+    margin: unset;
+    margin-bottom: unset;
+    position: relative;
+    flex: 1;
+    overflow: hidden;
   }
 
-  .woman-illustration {
-
+  .illustration picture:nth-child(1) {
+    position: relative;
+    z-index: 2;
+    transform: translate(-4rem, 5rem);
+  }
+  
+  .illustration picture:nth-child(2) {
+    position: absolute;
+    transform: translate(-28.5rem, 5rem);
+    max-width: unset;
+    width: 50rem;
+    z-index: 1;
   }
 
-  .floor-pattern {
-    position: unset;
+
+  /* ====== FAQ ====== */
+  .faq {
+    flex: 1;
+    padding: 2rem 6.75rem 2rem 0;
+  }
+
+  .title {
+    text-align: unset;
   }
 }

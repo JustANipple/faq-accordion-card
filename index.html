@@ -20,18 +20,38 @@
 <body>
 
   <main class="container">
+    <div class="at-box">
+      <img 
+      src="images/illustration-box-desktop.svg" 
+      alt="" 
+      aria-hidden="true">
+    </div>
     <div class="illustration">
-      <img 
-      src="images/illustration-woman-online-mobile.svg" 
-      alt="" 
-      aria-hidden="true"
-      class="woman-illustration"
-      media="(max-width: 768px)">
-      <img 
-      src="images/bg-pattern-mobile.svg" 
-      alt="" 
-      aria-hidden="true"
-      class="floor-pattern">
+      <picture>
+        <source 
+        srcset="images/illustration-woman-online-mobile.svg"
+        media="(max-width: 767px)">
+        <source
+        srcset="images/illustration-woman-online-desktop.svg"
+        media="(min-width: 768px)">
+        <img 
+        src="images/favicon-32x32.png" 
+        alt="" 
+        aria-hidden="true">
+      </picture>
+
+      <picture>
+        <source 
+        srcset="images/bg-pattern-mobile.svg"
+        media="(max-width: 767px)">
+        <source
+        srcset="images/bg-pattern-desktop.svg"
+        media="(min-width: 768px)">
+        <img 
+        src="images/favicon-32x32.png" 
+        alt="" 
+        aria-hidden="true">
+      </picture>
     </div>
     
     <div class="faq">
