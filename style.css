@@ -228,3 +228,14 @@ body {
     font-size: 0.9rem;
   }
 }
+
+/* ====== Active states ====== */
+.invite-question:hover,
+.size-question:hover,
+.password-question:hover,
+.sub-question:hover,
+.support-question:hover {
+  color: var(--arrow-clr);
+  cursor: pointer;
+  font-weight: var(--fw-bold);
+}
