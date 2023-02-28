@@ -5,6 +5,8 @@ const boxArray = document.querySelectorAll([
     ".sub-box",
     ".support-box"
 ]);
+
+/*
 const questionArray = document.querySelectorAll([
     ".invite-question",
     ".size-question",
@@ -26,10 +28,13 @@ const arrowArray = document.querySelectorAll([
     ".sub-arrow",
     ".support-arrow" 
 ]);
+*/
+
 const rootStyles = window.getComputedStyle(document.documentElement);
 const fwReg = rootStyles.getPropertyValue("--fw-reg");
 const fwBold = rootStyles.getPropertyValue("--fw-bold");
 
+/*
 for(let i = 0; i < boxArray.length; i++) {
     boxArray[i].addEventListener("click", (event) => {
 
@@ -49,4 +54,15 @@ for(let i = 0; i < boxArray.length; i++) {
         }
 
     });
+}
+*/
+
+for(const box of boxArray) {
+    box.addEventListener("click", showOrNot);
+}
+
+function showOrNot() {
+    if(window.getComputedStyle(this.children[2]).display === "block") {
+        
+    } else if (window.getComputedStyle(this.children[2]).display === "none")
 }
