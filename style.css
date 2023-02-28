@@ -229,14 +229,22 @@ body {
   }
 }
 
-/* ====== Active states ====== */
-.invite-question:hover,
-.size-question:hover,
-.password-question:hover,
-.sub-question:hover,
-.support-question:hover {
-  color: var(--arrow-clr);
-  cursor: pointer;
-  font-weight: var(--fw-bold);
-  transition: color 0.3s ease;
-}
+  /* ====== Active states ====== */
+  .invite-question:hover,
+  .size-question:hover,
+  .password-question:hover,
+  .sub-question:hover,
+  .support-question:hover {
+    color: var(--arrow-clr);
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  /* Arrow */
+  .invite-arrow:hover,
+  .size-arrow:hover,
+  .password-arrow:hover,
+  .sub-arrow:hover,
+  .support-arrow:hover {
+    cursor: pointer;
+  }
